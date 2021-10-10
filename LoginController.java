@@ -11,7 +11,7 @@ public class LoginController {
 	public String login() {
 		return "login"; // 自动去templates里找到login.html并返回给用户
 	}
-	
+	//123
 	@PostMapping("/home") // 匹配html中action为“/home”的form标签
 	public String validate(@RequestParam("username") String userName, @RequestParam("password") String password) {
 		if(userName.equals("admin") && password.equals("admin")) {
